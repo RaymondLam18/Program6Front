@@ -184,12 +184,14 @@ function CarList () {
                             value={selectedType} onChange={handleTypeChange}>
                         <option value="">All Types</option>
                         <option value="Muscle Car">Muscle Car</option>
+                        <option value="Semi-Truck">Semi-Truck</option>
                         <option value="Sports Car">Sports Car</option>
+                        <option value="Super Car">Super Car</option>
                         <option value="SUV">SUV</option>
                     </select>
                 </div>
                 <div>
-                    <input className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"
+                <input className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"
                            type="text"
                            placeholder="Search by Car Name"
                            value={searchTerm}
