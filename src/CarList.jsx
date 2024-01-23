@@ -85,7 +85,6 @@ function CarList () {
 
     const updateCar = async () => {
         try {
-            // Update de staat met de bewerkte auto
             setCars((prevCars) =>
                 prevCars.map((car) => (car._id === editedCar._id ? editedCar : car))
             );
@@ -213,25 +212,24 @@ function CarList () {
                             placeholder="Name"
                             value={editedCar.name}
                             onChange={(e) => setEditedCar({...editedCar, name: e.target.value})}
-                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"  // Set styling
+                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"
                         />
                         <input
                             type="text"
                             placeholder="Type"
                             value={editedCar.type}
                             onChange={(e) => setEditedCar({...editedCar, type: e.target.value})}
-                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"  // Set styling
+                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"
                         />
                         <input
                             type="text"
                             placeholder="About"
                             value={editedCar.about}
                             onChange={(e) => setEditedCar({...editedCar, about: e.target.value})}
-                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"  // Set styling
+                            className="mr-2 px-4 py-2 border border-black rounded text-black bg-white"
                         />
                         <button onClick={updateCar} className="bg-green-500 text-white px-4 py-2 rounded">Save</button>
-                        <button onClick={cancelEditing}
-                                className="bg-red-500 text-white px-4 py-2 ml-2 rounded">Cancel
+                        <button onClick={cancelEditing} className="bg-red-500 text-white px-4 py-2 ml-2 rounded">Cancel
                         </button>
                     </div>
                 </div>
