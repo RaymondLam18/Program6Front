@@ -100,10 +100,8 @@ function CarList () {
             });
 
             if (response.ok) {
-                // De API-oproep was succesvol; hier is geen verdere actie nodig
                 cancelEditing();
             } else {
-                // Herstel de wijzigingen als de API-oproep mislukt
                 setCars((prevCars) =>
                     prevCars.map((car) => (car._id === editedCar._id ? car : car))
                 );
@@ -124,7 +122,6 @@ function CarList () {
             });
 
             if (response.ok) {
-                // Update de lijst met auto's na het verwijderen van een auto
                 await getCars();
             } else {
                 throw new Error("Failed to delete car");
@@ -136,12 +133,12 @@ function CarList () {
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
-        setCurrentPage(1); // Reset de huidige pagina bij het zoeken
+        setCurrentPage(1);
     };
 
     const handleTypeChange = (e) => {
         setSelectedType(e.target.value);
-        setCurrentPage(1); // Reset de huidige pagina bij het wijzigen van het autotype
+        setCurrentPage(1);
     };
 
     const filteredCars = cars.filter((car) =>
@@ -168,7 +165,6 @@ function CarList () {
     }, []);
 
     useEffect(() => {
-        // Check if the pathname ends with "/modal"
         if (location.pathname.endsWith("/modal")) {
             openModal();
         }
