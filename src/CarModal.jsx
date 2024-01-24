@@ -22,7 +22,7 @@ function CarModal({ isOpen, closeModal, addCar }) {
     };
 
     const openModal = () => {
-        // Voeg eventueel logica toe die moet worden uitgevoerd wanneer de modal opent
+
     };
 
     return (
@@ -30,7 +30,7 @@ function CarModal({ isOpen, closeModal, addCar }) {
             isOpen={isOpen}
             onRequestClose={closeModal}
             contentLabel="Add New Car Modal"
-            className="w-96 h-96 mx-auto my-24 p-8 bg-white rounded shadow-md flex flex-col"
+            className="w-96 h-96 mx-auto my-24 p-8 bg-gray-200 rounded shadow-md flex flex-col"
         >
             <h2 className="text-gray-900 font-bold mb-4 text-center">Add New Car</h2>
 
