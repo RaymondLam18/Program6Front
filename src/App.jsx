@@ -19,7 +19,7 @@ function App() {
     return (
         <>
             <nav id="header" className="sticky w-full z-10 top-0 bg-silver-300">
-                <div className="w-full md:max-w-4xl mx-auto flex flex-col sm:flex-row gap-4 sm:flex-0 items-center justify-between mt-0 py-3">
+                <div className="w-full md:max-w-4xl mx-auto flex flex-col sm:flex-row gap-4 sm:flex-0 items-center justify-between mt-0 py-3 bg-gray-200">
                     <div className="sm:pl-4 flex-1">
                         <Link className="flex items-center gap-2" to="/">
               <span className="text-gray-900 no-underline hover:italic font-extrabold text-xl">
