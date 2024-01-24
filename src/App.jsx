@@ -18,10 +18,7 @@ function App() {
 
     return (
         <>
-            <nav
-                id="header"
-                className="sticky w-full z-10 top-0 bg-gray-100"
-            >
+            <nav id="header" className="sticky w-full z-10 top-0 bg-silver-300">
                 <div className="w-full md:max-w-4xl mx-auto flex flex-col sm:flex-row gap-4 sm:flex-0 items-center justify-between mt-0 py-3">
                     <div className="sm:pl-4 flex-1">
                         <Link className="flex items-center gap-2" to="/">
@@ -31,24 +28,13 @@ function App() {
                         </Link>
                     </div>
                     <div className="flex justify-end flex-1 bg-gray-100 z-20 gap-4 flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
-                        <Link
-                            className="text-gray-600 no-underline hover:text-green-600 py-2 px-4"
-                            to="/"
-                            onClick={scrollToTop}
-                        >
+                        <Link className="text-gray-600 no-underline hover:text-green-600 py-2 px-4" to="/" onClick={scrollToTop}>
                             Home
                         </Link>
-                        <Link
-                            className="cursor-pointer text-gray-600 no-underline hover:text-green-600 py-2 px-4 font-bold"
-                            to="/cars"
-                            onClick={scrollToTop}
-                        >
+                        <Link className="cursor-pointer text-gray-600 no-underline hover:text-green-600 py-2 px-4 font-bold" to="/cars" onClick={scrollToTop}>
                             Cars
                         </Link>
-                        <a
-                            className="text-gray-600 no-underline hover:text-green-600 py-2 px-4"
-                            onClick={scrollToAbout}
-                        >
+                        <a className="text-gray-600 no-underline hover:text-green-600 py-2 px-4" onClick={scrollToAbout}>
                             About
                         </a>
                     </div>

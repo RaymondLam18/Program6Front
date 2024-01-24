@@ -59,7 +59,6 @@ function CarModal({ isOpen, closeModal, addCar }) {
                 className="mb-4 px-4 py-2 border border-black rounded text-black bg-white"
             />
 
-            {/* Knoppen onderaan */}
             <button
                 onClick={handleAddCar}
                 className="bg-blue-500 text-white px-4 py-2 rounded mb-2"
