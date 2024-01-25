@@ -205,7 +205,7 @@ function CarList () {
 
             {editedCar && (
                 <div className="edit-car">
-                    <h2>Edit Car</h2>
+                    <h2 className="text-gray-900 font-bold">Edit Car</h2>
                     <div className="flex flex-row items-center">
                     <input
                             type="text"
